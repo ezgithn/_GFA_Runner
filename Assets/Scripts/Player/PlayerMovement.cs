@@ -19,6 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
 	private Vector3 _velocity = new Vector3();
 	
+	// public Vector3 Velocity => _velocity;
+	public Vector3 Velocity => _rigidbody.velocity;
+	
 	[SerializeField]
 	private float _maxHorizontalDistance;
 

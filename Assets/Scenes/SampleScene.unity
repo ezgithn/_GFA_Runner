@@ -1373,6 +1373,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 61068097dfc30264da4034f958968b16,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61068097dfc30264da4034f958968b16,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61068097dfc30264da4034f958968b16,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61068097dfc30264da4034f958968b16,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1431,7 +1446,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 64196343666603e4696c00932e019d18, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 61068097dfc30264da4034f958968b16, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -7484,6 +7500,7 @@ GameObject:
   - component: {fileID: 1126711451}
   - component: {fileID: 1126711450}
   - component: {fileID: 1126711452}
+  - component: {fileID: 1126711453}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -7572,7 +7589,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1126711444}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 61068097dfc30264da4034f958968b16, type: 3}
   m_Controller: {fileID: 9100000, guid: 64196343666603e4696c00932e019d18, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -7584,6 +7601,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1126711453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126711444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7802ec447d5c4e34195351a5f9746c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1126711452}
+  _movement: {fileID: 1126711445}
 --- !u!1001 &1143380119
 PrefabInstance:
   m_ObjectHideFlags: 0
