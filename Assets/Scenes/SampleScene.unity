@@ -723,7 +723,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -1066,6 +1066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Character@T-Pose
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 61068097dfc30264da4034f958968b16,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 64196343666603e4696c00932e019d18, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4986,7 +4991,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -5095,15 +5100,6 @@ Transform:
   - {fileID: 1100353524}
   - {fileID: 1900124714}
   - {fileID: 1116865229}
-  - {fileID: 5211737197659230863}
-  - {fileID: 1809812136}
-  - {fileID: 1673682571}
-  - {fileID: 1927076906}
-  - {fileID: 1370406488}
-  - {fileID: 1784561061}
-  - {fileID: 1038925902}
-  - {fileID: 99971313}
-  - {fileID: 949452123}
   - {fileID: 1352854052}
   - {fileID: 485032070}
   - {fileID: 159914810}
@@ -5571,7 +5567,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -6915,6 +6911,15 @@ Transform:
   - {fileID: 1153170573}
   - {fileID: 868924882}
   - {fileID: 3130336885327508527}
+  - {fileID: 5211737197659230863}
+  - {fileID: 1809812136}
+  - {fileID: 1673682571}
+  - {fileID: 1927076906}
+  - {fileID: 1370406488}
+  - {fileID: 1784561061}
+  - {fileID: 1038925902}
+  - {fileID: 99971313}
+  - {fileID: 949452123}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1300522831
@@ -7444,7 +7449,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -9007,7 +9012,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -9526,7 +9531,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -9600,7 +9605,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -10105,7 +10110,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -11815,7 +11820,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 951860911}
+    m_TransformParent: {fileID: 1299233598}
     m_Modifications:
     - target: {fileID: 1644530799250446012, guid: edca697e3fdd9ff4d8549d39f87789a9,
         type: 3}
@@ -12282,12 +12287,12 @@ SceneRoots:
   - {fileID: 2117577624}
   - {fileID: 780965232}
   - {fileID: 1974742305}
+  - {fileID: 1022719501}
   - {fileID: 1606029369}
   - {fileID: 951860911}
   - {fileID: 1299233598}
   - {fileID: 836818001}
   - {fileID: 1541902554}
   - {fileID: 1519777161}
-  - {fileID: 1022719501}
   - {fileID: 1021935816}
   - {fileID: 1925566358}
