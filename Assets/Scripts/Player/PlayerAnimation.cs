@@ -11,8 +11,25 @@ public class PlayerAnimation : MonoBehaviour
     private PlayerMovement _movement;
     
 
+    
+    private void OnEnable()
+    {
+        _movement.Jumped += OnJumped;
+    }
+    
+    private void OnDisable()
+    {
+        _movement.Jumped -= OnJumped;
+    }
+    
+    private void OnJumped()
+    {
+        _animator.SetTrigger("Jump");
+    }
+    
     private void Update()
     {
         _animator.SetFloat("MovementSpeed",  _movement.Velocity.z);
+        _animator.SetBool("IsGrounded", _movement.IsGrounded);
     }
 }
