@@ -6,7 +6,8 @@ using UnityEngine;
 public class GoldDisplay : MonoBehaviour
 {
 	[SerializeField] private TMP_Text _text;
-
+	
+	
 	private void OnEnable()
 	{
 		GameInstance.Instance.GoldChanged += OnGoldChanged;

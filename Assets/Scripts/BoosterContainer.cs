@@ -10,15 +10,14 @@ public class BoosterContainer : MonoBehaviour
 	public event Action<BoosterInstance> BoosterAdded;
 	public event Action<Booster> BoosterRemoved;
 	
+	
 	public void AddBooster(Booster booster)
 	{
 		foreach (var instance in _activeBoosters)
 		{
-			if (instance.Booster == booster)
-			{
-				instance.ResetDuration();
-				return;
-			}
+			if (instance.Booster != booster) continue;
+			instance.ResetDuration();
+			return;
 		}
 
 		var boosterInstance = new BoosterInstance(booster);
@@ -40,15 +39,18 @@ public class BoosterContainer : MonoBehaviour
 
 	private void Update()
 	{
-		for (int i = _activeBoosters.Count - 1; i >= 0; i--)
+		for (var i = _activeBoosters.Count - 1; i >= 0; i--)
 		{
 			var instance = _activeBoosters[i];
 			instance.RemainingDuration -= Time.deltaTime;
-			if (instance.RemainingDuration <= 0)
+			
+			switch (instance.RemainingDuration)
 			{
-				instance.Booster.OnRemoved(this);
-				_activeBoosters.RemoveAt(i);
-				BoosterRemoved?.Invoke(instance.Booster);
+				case <= 0:
+					instance.Booster.OnRemoved(this);
+					_activeBoosters.RemoveAt(i);
+					BoosterRemoved?.Invoke(instance.Booster);
+					break;
 			}
 		}
 	}
