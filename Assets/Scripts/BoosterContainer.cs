@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BoosterContainer : MonoBehaviour
 {
 	private List<BoosterInstance> _activeBoosters = new List<BoosterInstance>();

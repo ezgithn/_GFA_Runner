@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class GoldDisplay : MonoBehaviour
 {
-	[SerializeField] private TMP_Text _text;
+	[SerializeField] 
+	private TMP_Text _text;
 	
 	
 	private void OnEnable()
@@ -28,6 +30,7 @@ public class GoldDisplay : MonoBehaviour
 	{
 		UpdateUI(GameInstance.Instance.Gold);
 	}
+	
 	private void UpdateUI(int value)
 	{
 		_text.text = value.ToString();

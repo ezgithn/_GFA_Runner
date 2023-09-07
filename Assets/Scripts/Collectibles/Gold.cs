@@ -16,7 +16,6 @@ public class Gold : Collectible
 	{
 		
 		GameInstance.Instance.Gold += Mathf.RoundToInt(1 * GameInstance.Instance.GoldMultiplier);
-		Debug.Log(GameInstance.Instance.Gold);
 		
 		// _graphics.DOKill();
 		// _graphics.SetParent(null);

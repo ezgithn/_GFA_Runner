@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class UIPageController : MonoBehaviour
 {
 	[SerializeField]
@@ -16,6 +17,7 @@ public class UIPageController : MonoBehaviour
 	
 	[SerializeField]
 	private GameObject _winPage;
+	
 
 	private void Start()
 	{

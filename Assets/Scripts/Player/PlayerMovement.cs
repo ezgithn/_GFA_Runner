@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMovement : MonoBehaviour
 {
 	[SerializeField] 
@@ -16,13 +17,14 @@ public class PlayerMovement : MonoBehaviour
 
 	[SerializeField] 
 	private float _jumpPower;
+	
 	public float JumpPower
 	{
 		get => _jumpPower;
 		set => _jumpPower = value;
 	}
-
 	public event Action Jumped;
+	
 
 	private Vector3 _velocity = new Vector3();
 	
@@ -35,7 +37,6 @@ public class PlayerMovement : MonoBehaviour
 	private bool _isGrounded;
 	public bool IsGrounded => _isGrounded;
 	
-		
 		
 
 	private void Update()

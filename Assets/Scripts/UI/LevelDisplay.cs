@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
+
 public class LevelDisplay : MonoBehaviour
 {
 	[SerializeField] private TMP_Text _text;
+	
 
 	private void OnEnable()
 	{
@@ -27,6 +29,7 @@ public class LevelDisplay : MonoBehaviour
 	{
 		UpdateUI(GameInstance.Instance.Level);
 	}
+	
 	private void UpdateUI(int value)
 	{
 		_text.text = "Level: " + (value + 1);
