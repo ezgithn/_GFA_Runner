@@ -53,10 +53,9 @@ public class PlayerMovement : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
 		{
-			_velocity.y = _jumpPower;
+			_rigidbody.AddForce(Vector3.up * _jumpPower, ForceMode.Impulse);
 			Jumped?.Invoke();
-			//_rigidbody.AddForce(Vector3.up * _jumpPower, ForceMode.Impulse);
-			_isGrounded = false;
+			
 			
 		}
 	}
