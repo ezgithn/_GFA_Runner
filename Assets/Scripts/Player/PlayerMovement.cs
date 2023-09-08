@@ -56,7 +56,6 @@ public class PlayerMovement : MonoBehaviour
 			_rigidbody.AddForce(Vector3.up * _jumpPower, ForceMode.Impulse);
 			Jumped?.Invoke();
 			
-			
 		}
 	}
 
