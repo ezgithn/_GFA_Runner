@@ -6483,6 +6483,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BootsBooster
       objectReference: {fileID: 0}
+    - target: {fileID: 6309003895477054008, guid: d560361228de77553998fa5fd3d8f857,
+        type: 3}
+      propertyPath: m_TagString
+      value: BootBooster
+      objectReference: {fileID: 0}
     - target: {fileID: 8517660808093857261, guid: d560361228de77553998fa5fd3d8f857,
         type: 3}
       propertyPath: m_Radius
@@ -9475,7 +9480,7 @@ MonoBehaviour:
   _forwardSpeed: 10
   _horizontalSpeed: 8
   _rigidbody: {fileID: 1126711450}
-  _jumpPower: 15
+  _jumpPower: 12
   _maxHorizontalDistance: 4.5
 --- !u!4 &1126711449
 Transform:
@@ -10912,6 +10917,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BootsBooster (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309003895477054008, guid: d560361228de77553998fa5fd3d8f857,
+        type: 3}
+      propertyPath: m_TagString
+      value: BootBooster
       objectReference: {fileID: 0}
     - target: {fileID: 8517660808093857261, guid: d560361228de77553998fa5fd3d8f857,
         type: 3}
