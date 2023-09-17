@@ -24,7 +24,10 @@ public class PlayerMovement : MonoBehaviour
 		set => _jumpPower = value;
 	}
 	public event Action Jumped;
+	private bool _isJumping = false;
 	
+	[SerializeField] private ParticleSystem playerParticle1;
+	[SerializeField] private ParticleSystem playerParticle2;
 
 	private Vector3 _velocity = new Vector3();
 	
@@ -55,6 +58,9 @@ public class PlayerMovement : MonoBehaviour
 		{
 			_rigidbody.AddForce(Vector3.up * _jumpPower, ForceMode.Impulse);
 			Jumped?.Invoke();
+			_isJumping = true;
+			playerParticle1.Stop();
+			playerParticle2.Stop();
 			
 		}
 	}
@@ -72,6 +78,13 @@ public class PlayerMovement : MonoBehaviour
 
 		Debug.DrawRay(_rigidbody.position, Vector3.down * 1.05f);
 		_isGrounded = Physics.Raycast(_rigidbody.position, Vector3.down, 1.05f);
+		
+		if (_isGrounded && _isJumping)
+		{
+			playerParticle1.Play(); 
+			playerParticle2.Play();
+			_isJumping = false;
+		}
 		
 	}
 }
