@@ -8,6 +8,12 @@ public class BootsBooster : Booster
     [SerializeField]
     private float _multiplier = 2.5f;
     
+    public float bootJumpForce = 15f; 
+    private float bootDuration = 5f; 
+    private bool isBooting = false;
+    
+    
+    
     public override void OnAdded(BoosterContainer container)
     {
         if (container.TryGetComponent(out PlayerMovement playerMovement))
@@ -23,4 +29,13 @@ public class BootsBooster : Booster
             playerMovement.JumpPower /= _multiplier;
         }
     }
+    
+    public void BootJump(PlayerMovement playerMovement)
+    {
+        if (isBooting) return;
+        isBooting = true;
+        playerMovement.JumpPower = bootJumpForce;
+        StartCoroutine(BootTimer(playerMovement));
+    }
+    
 }
