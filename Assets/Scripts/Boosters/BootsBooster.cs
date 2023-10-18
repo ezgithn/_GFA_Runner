@@ -6,13 +6,11 @@ using UnityEngine;
 public class BootsBooster : Booster
 {
     [SerializeField]
-    private float _multiplier = 2.5f;
+    private float _multiplier;
     
-    public float bootJumpForce = 15f; 
+    public float bootJumpForce = 35f; 
     private float bootDuration = 5f; 
     private bool isBooting = false;
-    
-    
     
     public override void OnAdded(BoosterContainer container)
     {
@@ -34,8 +32,14 @@ public class BootsBooster : Booster
     {
         if (isBooting) return;
         isBooting = true;
-        playerMovement.JumpPower = bootJumpForce;
-        StartCoroutine(BootTimer(playerMovement));
+        playerMovement.JumpPower = bootJumpForce; 
+    }
+
+    IEnumerator BootTimer(PlayerMovement playerMovement)
+    {
+        yield return new WaitForSeconds(bootDuration);
+        isBooting = false;
+        playerMovement.JumpPower /= _multiplier; 
     }
     
 }
