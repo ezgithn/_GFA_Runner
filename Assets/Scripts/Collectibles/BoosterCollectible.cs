@@ -14,4 +14,5 @@ public class BoosterCollectible : Collectible
             container.AddBooster(_booster);
         }
     }
+    
 }
