@@ -8,4 +8,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Prefabs/LevelPrfbs/Lvl1.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Prefabs/LevelPrfbs/Lvl2.unity
+    guid: 016a17b775a1f604eab1fb778e8a12e2
+  - enabled: 1
+    path: Assets/Prefabs/LevelPrfbs/Lvl3.unity
+    guid: 390a0afe98f99254f935ab5dc3030a37
   m_configObjects: {}
